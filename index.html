@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>IYBL App Support</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Support, contact, and privacy information for the official Idaho Youth Basketball League app." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="IYBL App Support" />
+  <meta property="og:description" content="Support, contact, and privacy information for the official Idaho Youth Basketball League app." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root{
+      --brand:#F97316;        /* orange */
+      --link:#3B82F6;         /* blue */
+      --bg:#f6f7fb;
+      --card:#ffffff;
+      --text:#0f172a;         /* slate-900 */
+      --muted:#475569;        /* slate-600 */
+      --ring:rgba(59,130,246,.25);
+      --radius:14px;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg:#0b0f14;
+        --card:#10161d;
+        --text:#e5e7eb;
+        --muted:#9ca3af;
+      }
+      .logo-dot{ filter: brightness(1.1); }
+    }
+
+    *{ box-sizing:border-box }
+    html,body{ height:100% }
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 10% -10%, rgba(249,115,22,.08), transparent 60%),
+                  radial-gradient(1000px 500px at 110% -20%, rgba(59,130,246,.10), transparent 70%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+
+    .wrap{
+      max-width:880px;
+      margin:56px auto;
+      padding:0 20px;
+    }
+
+    header{
+      display:flex;
+      align-items:center;
+      gap:16px;
+      margin-bottom:22px;
+    }
+    .logo{
+      width:44px;height:44px;border-radius:12px;
+      display:grid;place-items:center;
+      background:linear-gradient(135deg, var(--brand), #fb923c);
+      box-shadow:0 8px 24px rgba(249,115,22,.25), inset 0 0 0 1px rgba(255,255,255,.25);
+    }
+    .logo-dot{
+      width:18px;height:18px;border-radius:50%;
+      background:#fff;
+      box-shadow:0 0 0 4px rgba(255,255,255,.35);
+    }
+
+    h1{ font-size: clamp(28px, 3vw, 34px); margin:0 }
+    .sub{ color:var(--muted); margin:6px 0 0 0; font-size:15.5px }
+
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:
+        0 1px 2px rgba(17,24,39,.06),
+        0 20px 40px rgba(2,6,23,.08);
+      padding:28px;
+      margin-top:18px;
+      border:1px solid rgba(148,163,184,.15);
+    }
+
+    .grid{
+      display:grid;
+      gap:16px;
+      grid-template-columns: 1fr;
+    }
+    @media (min-width:720px){
+      .grid{ grid-template-columns: 1fr 1fr; }
+    }
+
+    h2{
+      font-size:18px;margin:0 0 10px 0;
+      display:flex;align-items:center;gap:10px;
+    }
+    .kicker{
+      display:inline-block;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:#fff;
+      background:linear-gradient(135deg, var(--brand), #fb923c);
+      padding:6px 10px;border-radius:999px;
+      margin-left:auto;
+    }
+
+    p{ margin:0 0 12px 0 }
+    ul{ margin:8px 0 0 18px; padding:0 }
+    li{ margin:6px 0 }
+
+    a{
+      color:var(--link);
+      text-decoration:none;
+    }
+    a:hover{ text-decoration:underline }
+    .btns{ display:flex; gap:10px; flex-wrap:wrap; margin-top:14px }
+    .btn{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:10px 14px;border-radius:12px;border:1px solid rgba(148,163,184,.28);
+      background:linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,0));
+      text-decoration:none;color:var(--text);
+      box-shadow:0 1px 0 rgba(255,255,255,.06) inset;
+    }
+    .btn:focus-visible{
+      outline:3px solid var(--ring); outline-offset:2px;
+    }
+    .btn-primary{
+      border-color: transparent;
+      color:#fff;
+      background:linear-gradient(135deg, var(--brand), #fb923c);
+      box-shadow:0 8px 24px rgba(249,115,22,.35);
+    }
+
+    footer{
+      color:var(--muted);
+      font-size:13px;
+      margin:22px 2px 10px;
+      display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;
+    }
+
+    /* small helper icon style */
+    .ico{ width:18px;height:18px;display:inline-block }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo" aria-hidden="true"><div class="logo-dot"></div></div>
+      <div>
+        <h1>IYBL App Support</h1>
+        <p class="sub">The official app of the Idaho Youth Basketball League.</p>
+      </div>
+      <span class="kicker">IYBL</span>
+    </header>
+
+    <section class="card">
+      <div class="grid">
+        <div>
+          <h2>
+            <svg class="ico" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v6m0 4h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            Contact & Support
+          </h2>
+          <p>For support, questions, or feedback:</p>
+          <ul>
+            <li>Email: <a href="mailto:iybltech@gmail.com">iybltech@gmail.com</a></li>
+          </ul>
+          <div class="btns">
+            <a class="btn btn-primary" href="mailto:iybltech@gmail.com">
+              <!-- mail icon -->
+              <svg class="ico" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.5"/><path d="m22 8-9.293 5.576a2 2 0 0 1-2.074 0L1.5 8" stroke="currentColor" stroke-width="1.5" /></svg>
+              Email Support
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h2>
+            <svg class="ico" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5h16a1 1 0 0 1 1 1v12l-5-3-5 3-5-3-5 3V6a1 1 0 0 1 1-1Z" stroke="currentColor" stroke-width="1.5"/></svg>
+            Privacy Policy
+          </h2>
+          <p>The app collects no personal information and requires no user accounts. All data is stored on your device.</p>
+          <p>Read the full policy here:</p>
+          <div class="btns">
+            <a class="btn" href="https://michaelfitts.github.io/IYBL-Privacy-Policy" target="_blank" rel="noopener">
+              <!-- link icon -->
+              <svg class="ico" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M10 14a5 5 0 0 0 7.07 0l2.83-2.83a5 5 0 1 0-7.07-7.07L10.5 5.43" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M14 10a5 5 0 0 0-7.07 0L4.1 12.83a5 5 0 1 0 7.07 7.07l1.43-1.43" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              View Privacy Policy
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>
+        <svg class="ico" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        About
+      </h2>
+      <p>The IYBL app provides live game scores, team schedules, player stats, tournament results, and league announcements for the Idaho Youth Basketball League.</p>
+      <div class="btns" aria-label="Store links">
+        <span class="btn" title="Coming soon">App Store listing coming soon</span>
+        <span class="btn" title="Coming soon">Google Play listing coming soon</span>
+      </div>
+    </section>
+
+    <footer>
+      <span>&copy; <span id="y"></span> Idaho Youth Basketball League</span>
+      <span>Last updated <time id="d"></time></span>
+    </footer>
+  </div>
+
+  <script>
+    // tiny helpers for footer stamps
+    const now=new Date();
+    document.getElementById('y').textContent = now.getFullYear();
+    document.getElementById('d').textContent = now.toLocaleDateString(undefined,{year:'numeric',month:'short',day:'2-digit'});
+  </script>
+</body>
+</html>
